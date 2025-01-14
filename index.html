@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dars Jadvali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dars jadvali</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Dars jadvalini ko'rish uchun quyidagilarni to'ldiring.</h2>
+            <div class="form-group">
+                <label for="classSelect">Qaysi sinfning dars jadvalini ko'rmoqchisiz?</label>
+                <select id="classSelect">
+                    <option value="" disabled selected>Sinfni tanlang !</option>
+                    <option value="5-A">5-A</option>
+                    <option value="5-B">5-B</option>
+                    <option value="5-D">5-D</option>
+                    <option value="6-A">6-A</option>
+                    <option value="6-B">6-B</option>
+                    <option value="6-D">6-D</option>
+                    <option value="7-A">7-A</option>
+                    <option value="7-B">7-B</option>
+                    <option value="7-D">7-D</option>
+                    <option value="8-A">8-A</option>
+                    <option value="8-B">8-B</option>
+                    <option value="8-D">8-D</option>
+                    <option value="9-A">9-A</option>
+                    <option value="9-B">9-B</option>
+                    <option value="9-D">9-D</option>
+                    <option value="10-A">10-A</option>
+                    <option value="10-B">10-B</option>
+                    <option value="10-D">10-D</option>
+                    <option value="11-A">11-A</option>
+                    <option value="11-B">11-B</option>
+                    <option value="11-D">11-D</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="daySelect">Hafta kunini tanlang:</label>
+                <select id="daySelect">
+                    <option value="" disabled selected>Kunni tanlang</option>
+                    <option value="Dushanba">Dushanba</option>
+                    <option value="Seshanba">Seshanba</option>
+                    <option value="Chorshanba">Chorshanba</option>
+                    <option value="Payshanba">Payshanba</option>
+                    <option value="Juma">Juma</option>
+                </select>
+            </div>
+            <button id="showSchedule">Jadvalni ko‘rish</button>
+        </section>
+        <section id="result" class="result hidden">
+            <h2>Natija :</h2>
+            <div id="scheduleInfo"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dars Jadvali. Barcha huquqlar himoyalangan.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
