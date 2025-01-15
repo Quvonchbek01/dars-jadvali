@@ -78,7 +78,7 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0; /* Footer balandligini kamaytirish */
     background-color: #f1f1f1;
     font-size: 14px;
     color: #777;
@@ -86,7 +86,16 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Matnlar orasidagi masofa */
+}
+
+.schfooter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Ikkala gap orasidagi masofa */
+}
+
+footer p {
+    margin: 0; /* Qo‘shimcha bo‘sh joyni yo‘q qilish */
 }
 
 .schedule {
