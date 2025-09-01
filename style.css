@@ -15,7 +15,34 @@ header {
     padding: 20px;
     text-align: center;
 }
+.scroll-banner {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #ffcc00, #ff9900); /* gradient fon */
+  color: #fff;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* yumshoq soyasi */
+  overflow: hidden;
+}
 
+.scroll-banner span {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 12s linear infinite;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* matnga ham soyacha */
+}
+
+/* Chapdan o‘ngga silliq yurish */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 main {
     padding: 20px;
     flex: 1; /* Asosiy kontentni kengaytiradi */
