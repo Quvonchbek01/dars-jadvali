@@ -1960,17 +1960,17 @@ document.getElementById("showSchedule").addEventListener("click", function () {
 
     if (schedule[selectedClass] && schedule[selectedClass][selectedDay]) {
         const daySchedule = schedule[selectedClass][selectedDay];
-        let scheduleContent = <div class="schedule">;
+        let scheduleContent = `<div class="schedule">`;
 
         daySchedule.forEach(item => {
-            scheduleContent += 
+            scheduleContent += `
                 <div class="schedule-item">
                     <span>${item.subject}:</span> ${item.time}
                 </div>
-            ;
+            `;
         });
 
-        scheduleContent += </div>;
+        scheduleContent += `</div>`;
         scheduleInfo.innerHTML = scheduleContent;
     } else {
         scheduleInfo.textContent = "Xatolik yuz berdi, bu sinf mavjud emas yoki dars jadvali hali yuklanmagan!";
