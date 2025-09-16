@@ -1,7 +1,3 @@
-window.onload = function() {
-  alert("Yangi o'quv yili uchun dars jadvallari hali mavjud emas. Barcha dars jadvallari dars vaqtlari o'zgarishlari stabil holatga o'tganidan so'ng yuklanadi. Biz bilan ekanligingizdan minnatdormiz.");
-};
-
 const schedule = {
     "5-A": {
         "Dushanba": [
