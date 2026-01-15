@@ -1,5 +1,5 @@
 const schedule = {
-    "5-A": {
+    "5A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -139,7 +139,7 @@ const schedule = {
             }
         ]
     },
-    "5-B": {
+    "5B": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -279,7 +279,7 @@ const schedule = {
             }
         ]
     },
-    "6-A": {
+    "6A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -423,7 +423,7 @@ const schedule = {
             }
         ]
     },
-    "7-A": {
+    "7A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -575,7 +575,7 @@ const schedule = {
             }
         ]
     },
-    "7-B": {
+    "7B": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -727,7 +727,7 @@ const schedule = {
             }
         ]
     },
-    "8-A": {
+    "8A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -879,7 +879,7 @@ const schedule = {
             }
         ]
     },
-    "8-B": {
+    "8B": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1031,7 +1031,7 @@ const schedule = {
             }
         ]
     },
-    "8-D": {
+    "8D": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1183,7 +1183,7 @@ const schedule = {
             }
         ]
     },
-    "9-A": {
+    "9A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1335,7 +1335,7 @@ const schedule = {
             }
         ]
     },
-    "9-B": {
+    "9B": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1487,7 +1487,7 @@ const schedule = {
             }
         ]
     },
-    "10-A": {
+    "10A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1639,7 +1639,7 @@ const schedule = {
             }
         ]
     },
-    "10-B": {
+    "10B": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -1791,7 +1791,7 @@ const schedule = {
             }
         ]
     },
-    "11-A": {
+    "11A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
