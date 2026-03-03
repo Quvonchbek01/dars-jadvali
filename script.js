@@ -1,5 +1,5 @@
-const schedule = {
-    "5A": {
+
+    "5-A": {
         "Dushanba": [
             {
                 "subject": "Kelajak soati",
@@ -500,97 +500,6 @@ const schedule = {
             {
                 "subject": "Algebra",
                 "time": "11:00-11:45"
-            },
-            {
-                "subject": "Kimyo",
-                "time": "12:15-13:00"
-            },
-            {
-                "subject": "Ingliz tili",
-                "time": "13:05-13:50"
-            },
-            {
-                "subject": "Adabiyot",
-                "time": "13:55-14:40"
-            }
-        ],
-        "Payshanba": [
-            {
-                "subject": "Ingliz tili",
-                "time": "08:30-09:15"
-            },
-            {
-                "subject": "Informatika",
-                "time": "09:20-10:05"
-            },
-            {
-                "subject": "O'zbekiston tarixi",
-                "time": "10:10-10:55"
-            },
-            {
-                "subject": "Algebra",
-                "time": "11:00-11:45"
-            },
-            {
-                "subject": "Rus tili",
-                "time": "12:15-13:00"
-            },
-            {
-                "subject": "Jismoniy tarbiya",
-                "time": "13:05-13:50"
-            },
-            {
-                "subject": "Geometriya",
-                "time": "13:55-14:40"
-            }
-        ],
-        "Juma": [
-            {
-                "subject": "Geometriya",
-                "time": "08:30-09:15"
-            },
-            {
-                "subject": "Ingliz tili",
-                "time": "09:20-10:05"
-            },
-            {
-                "subject": "Jahon tarixi",
-                "time": "10:10-10:55"
-            },
-            {
-                "subject": "San'at (Art)",
-                "time": "11:00-11:45"
-            },
-            {
-                "subject": "Biologiya",
-                "time": "12:15-13:00"
-            },
-            {
-                "subject": "Ona tili",
-                "time": "13:05-13:50"
-            },
-            {
-                "subject": "Kimyo",
-                "time": "13:55-14:40"
-            }
-        ]
-    },
-    "7B": {
-        "Dushanba": [
-            {
-                "subject": "Kelajak soati",
-                "time": "08:30-09:15"
-            },
-            {
-                "subject": "Ona tili",
-                "time": "09:20-10:05"
-            },
-            {
-                "subject": "Kimyo",
-                "time": "10:10-10:55"
-            },
-            {
-                "subject": "Geometriya",
                 "time": "11:00-11:45"
             },
             {
