@@ -1,4 +1,4 @@
-
+const schedule = {
     "5-A": {
         "Dushanba": [
             {
