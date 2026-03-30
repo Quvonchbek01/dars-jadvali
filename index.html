@@ -492,13 +492,13 @@
         <div class="sel-wrap">
           <select id="classSelect">
             <option value="" disabled selected>— Sinfni tanlang —</option>
-            <optgroup label="5-sinf"><option>5-A</option><option>5-B</option><option>5-D</option></optgroup>
-            <optgroup label="6-sinf"><option>6-A</option><option>6-B</option><option>6-D</option></optgroup>
-            <optgroup label="7-sinf"><option>7-A</option><option>7-B</option><option>7-D</option></optgroup>
+            <optgroup label="5-sinf"><option>5-A</option><option>5-B</option></optgroup>
+            <optgroup label="6-sinf"><option>6-A</option></optgroup>
+            <optgroup label="7-sinf"><option>7-A</option><option>7-B</option></optgroup>
             <optgroup label="8-sinf"><option>8-A</option><option>8-B</option><option>8-D</option></optgroup>
-            <optgroup label="9-sinf"><option>9-A</option><option>9-B</option><option>9-D</option></optgroup>
-            <optgroup label="10-sinf"><option>10-A</option><option>10-B</option><option>10-D</option></optgroup>
-            <optgroup label="11-sinf"><option>11-A</option><option>11-B</option><option>11-D</option></optgroup>
+            <optgroup label="9-sinf"><option>9-A</option><option>9-B</option></optgroup>
+            <optgroup label="10-sinf"><option>10-A</option><option>10-B</option></optgroup>
+            <optgroup label="11-sinf"><option>11-A</option></optgroup>
           </select>
         </div>
       </div>
@@ -555,11 +555,15 @@ const schedule = {
   "5-A": {
     "Dushanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Tabiiy fan",
         "time": "09:20-10:05"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
@@ -567,33 +571,33 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Tabiiy fan",
+        "subject": "San'at (Art)",
         "time": "12:15-13:00"
       },
       {
-        "subject": "IELTS",
+        "subject": "Jismoniy tarbiya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Matematika",
+        "subject": "IELTS",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Adabiyot",
+        "subject": "Tarbiya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Matematika",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Matematika",
+        "subject": "Ona tili",
         "time": "11:00-11:45"
       },
       {
@@ -601,21 +605,47 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Tabiiy fan",
         "time": "13:05-13:50"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Informatika",
+        "subject": "O'zbekiston tarixi",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Rus tili",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Adabiyot",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Matematika",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Informatika",
+        "time": "13:05-13:50"
+      }
+    ],
+    "Payshanba": [
+      {
+        "subject": "Ingliz tili",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "O'zbekiston tarixi",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Informatika",
         "time": "10:10-10:55"
       },
       {
@@ -623,63 +653,37 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Matematika",
         "time": "12:15-13:00"
-      },
-      {
-        "subject": "Matematika",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Jismoniy tarbiya",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Payshanba": [
-      {
-        "subject": "Tabiiy fan",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Matematika",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "O'zbekiston tarixi",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Informatika",
-        "time": "11:00-11:45"
       },
       {
         "subject": "Ona tili",
-        "time": "12:15-13:00"
+        "time": "13:05-13:50"
       },
       {
-        "subject": "Ingliz tili",
-        "time": "13:05-13:50"
+        "subject": "Matematika",
+        "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "Matematika",
+        "subject": "San'at (Art)",
         "time": "08:30-09:15"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Adabiyot",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Jismoniy tarbiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Matematika",
         "time": "12:15-13:00"
       },
       {
@@ -691,11 +695,15 @@ const schedule = {
   "5-B": {
     "Dushanba": [
       {
-        "subject": "Tabiiy fan",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "San'at (Art)",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Tabiiy fan",
         "time": "10:10-10:55"
       },
       {
@@ -703,97 +711,97 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ingliz tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Jismoniy tarbiya",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "O'zbekiston tarixi",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Matematika",
+        "subject": "Ona tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Tarbiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ingliz tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Matematika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Adabiyot",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Matematika",
+        "subject": "Ingliz tili",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Adabiyot",
+        "subject": "Informatika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Matematika",
+        "subject": "Rus tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Informatika",
+        "subject": "O'zbekiston tarixi",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Ingliz tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Matematika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Adabiyot",
         "time": "13:05-13:50"
       }
     ],
     "Payshanba": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Informatika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Tabiiy fan",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Matematika",
+        "subject": "Rus tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Matematika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Ona tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Matematika",
         "time": "13:05-13:50"
       }
     ],
@@ -803,15 +811,15 @@ const schedule = {
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ona tili",
+        "subject": "San'at (Art)",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Matematika",
+        "subject": "Jismoniy tarbiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Matematika",
         "time": "11:00-11:45"
       },
       {
@@ -819,7 +827,7 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Tabiiy fan",
         "time": "13:05-13:50"
       }
     ]
@@ -827,11 +835,15 @@ const schedule = {
   "6-A": {
     "Dushanba": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Adabiyot",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Tabiiy fan",
+        "subject": "Matematika",
         "time": "10:10-10:55"
       },
       {
@@ -839,25 +851,25 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "IELTS",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Matematika",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "IELTS",
+        "subject": "Tabiiy fan",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "Matematika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Matematika",
+        "subject": "Tabiiy fan",
         "time": "09:20-10:05"
       },
       {
@@ -865,37 +877,37 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Rus tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Tarbiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "O'zbekiston tarixi",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Matematika",
+        "subject": "Ona tili",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "San'at (Art)",
+        "subject": "Matematika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Matematika",
+        "subject": "Tabiiy fan",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Tabiiy fan",
+        "subject": "Jismoniy tarbiya",
         "time": "11:00-11:45"
       },
       {
@@ -903,17 +915,17 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Matematika",
         "time": "13:05-13:50"
       }
     ],
     "Payshanba": [
       {
-        "subject": "Adabiyot",
+        "subject": "Rus tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
@@ -921,29 +933,25 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Adabiyot",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Tabiiy fan",
+        "subject": "Informatika",
         "time": "12:15-13:00"
       },
       {
         "subject": "Matematika",
         "time": "13:05-13:50"
-      },
-      {
-        "subject": "Jismoniy tarbiya",
-        "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Ona tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Rus tili",
+        "subject": "O'zbekiston tarixi",
         "time": "09:20-10:05"
       },
       {
@@ -951,53 +959,95 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Ingliz tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "IELTS",
+        "subject": "San'at (Art)",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Jismoniy tarbiya",
         "time": "13:05-13:50"
+      },
+      {
+        "subject": "IELTS",
+        "time": "13:55-14:40"
       }
     ]
   },
   "7-A": {
     "Dushanba": [
       {
-        "subject": "Kimyo",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Adabiyot",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "O'zbekiston tarixi",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "San'at (Art)",
-        "time": "12:15-13:00"
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
       },
       {
         "subject": "Ingliz tili",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Geometriya",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Jismoniy tarbiya",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Adabiyot",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Algebra",
         "time": "13:05-13:50"
       },
       {
         "subject": "Ingliz tili",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "San'at (Art)",
+        "time": "14:45-15:30"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Geometriya",
+        "subject": "Fizika",
         "time": "08:30-09:15"
       },
       {
+        "subject": "Kimyo",
+        "time": "09:20-10:05"
+      },
+      {
         "subject": "Algebra",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Jahon tarixi",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Rus tili",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Tarbiya",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Informatika",
+        "time": "13:55-14:40"
+      }
+    ],
+    "Chorshanba": [
+      {
+        "subject": "Adabiyot",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Biologiya",
         "time": "09:20-10:05"
       },
       {
@@ -1005,37 +1055,7 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Adabiyot",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "Tarbiya",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Informatika",
-        "time": "13:05-13:50"
-      },
-      {
         "subject": "Fizika",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Chorshanba": [
-      {
-        "subject": "Jahon tarixi",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Fizika",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Algebra",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Biologiya",
         "time": "11:00-11:45"
       },
       {
@@ -1047,7 +1067,7 @@ const schedule = {
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Ingliz tili",
         "time": "13:55-14:40"
       }
     ],
@@ -1057,49 +1077,49 @@ const schedule = {
         "time": "08:30-09:15"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Ona tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Fizika",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Fizika",
+        "subject": "O'zbekiston tarixi",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Algebra",
+        "subject": "Geometriya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Algebra",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Informatika",
+        "subject": "O'zbekiston tarixi",
         "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "San'at (Art)",
+        "subject": "Rus tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Algebra",
+        "subject": "Kimyo",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Algebra",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Informatika",
         "time": "12:15-13:00"
       },
       {
@@ -1107,45 +1127,57 @@ const schedule = {
         "time": "13:05-13:50"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "San'at (Art)",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "Ingliz tili",
+        "time": "14:45-15:30"
       }
     ]
   },
   "7-B": {
     "Dushanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Adabiyot",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Ingliz tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Kimyo",
         "time": "12:15-13:00"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Informatika",
         "time": "13:05-13:50"
       },
       {
         "subject": "San'at (Art)",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Algebra",
+        "subject": "Rus tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Informatika",
+        "subject": "Tarbiya",
         "time": "09:20-10:05"
       },
       {
@@ -1153,85 +1185,55 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Kimyo",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Fizika",
+        "subject": "O'zbekiston tarixi",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Fizika",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "Rus tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Fizika",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Biologiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Geografiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Jismoniy tarbiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "13:55-14:40"
       }
     ],
     "Payshanba": [
       {
-        "subject": "Rus tili",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Fizika",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Informatika",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Adabiyot",
-        "time": "11:00-11:45"
-      },
-      {
         "subject": "Geometriya",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Ingliz tili",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Algebra",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Juma": [
-      {
-        "subject": "O'zbekiston tarixi",
         "time": "08:30-09:15"
       },
       {
@@ -1239,7 +1241,7 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
@@ -1247,31 +1249,69 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Fizika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Adabiyot",
         "time": "13:55-14:40"
+      }
+    ],
+    "Juma": [
+      {
+        "subject": "Algebra",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Biologiya",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Informatika",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "San'at (Art)",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Geometriya",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Ona tili",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "O'zbekiston tarixi",
+        "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ]
   },
   "8-A": {
     "Dushanba": [
       {
-        "subject": "Geometriya",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Ona tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Rus tili",
         "time": "11:00-11:45"
       },
       {
@@ -1279,127 +1319,135 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Informatika",
+        "subject": "O'zbekiston tarixi",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Kimyo",
+        "subject": "Informatika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Jahon tarixi",
+        "subject": "Geometriya",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Algebra",
+        "subject": "Rus tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Adabiyot",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Fizika",
+        "subject": "Kimyo",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Jahon tarixi",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Fizika",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Ona tili",
+        "subject": "Ingliz tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Tarbiya",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Geometriya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Biologiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Geografiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "13:05-13:50"
       },
       {
         "subject": "Geografiya",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ],
     "Payshanba": [
       {
-        "subject": "Kimyo",
+        "subject": "O'zbekiston tarixi",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Adabiyot",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Algebra",
+        "subject": "Ingliz tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Fizika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Informatika",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Kimyo",
         "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "Biologiya",
+        "subject": "Ona tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Informatika",
+        "subject": "Biologiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Algebra",
+        "subject": "Jismoniy tarbiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Geometriya",
+        "subject": "San'at (Art)",
         "time": "13:05-13:50"
       },
       {
@@ -1411,37 +1459,11 @@ const schedule = {
   "8-B": {
     "Dushanba": [
       {
-        "subject": "San'at (Art)",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Informatika",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Fizika",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "Algebra",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Jismoniy tarbiya",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Geometriya",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Seshanba": [
-      {
-        "subject": "Fizika",
+        "subject": "Kelajak soati",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Jahon tarixi",
         "time": "09:20-10:05"
       },
       {
@@ -1449,7 +1471,41 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
+        "subject": "Fizika",
+        "time": "11:00-11:45"
+      },
+      {
         "subject": "Ingliz tili",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Algebra",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Informatika",
+        "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
+      }
+    ],
+    "Seshanba": [
+      {
+        "subject": "Ingliz tili",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Algebra",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "O'zbekiston tarixi",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Fizika",
         "time": "11:00-11:45"
       },
       {
@@ -1457,7 +1513,7 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
@@ -1467,37 +1523,41 @@ const schedule = {
     ],
     "Chorshanba": [
       {
-        "subject": "Algebra",
+        "subject": "Kimyo",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "San'at (Art)",
         "time": "09:20-10:05"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Fizika",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Tarbiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Biologiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Algebra",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ],
     "Payshanba": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Adabiyot",
         "time": "08:30-09:15"
       },
       {
@@ -1505,53 +1565,53 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Informatika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Geografiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Fizika",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Jismoniy tarbiya",
         "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "Adabiyot",
+        "subject": "Biologiya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ona tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Geometriya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Adabiyot",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geometriya",
+        "subject": "O'zbekiston tarixi",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Jahon tarixi",
+        "subject": "Rus tili",
         "time": "13:55-14:40"
       }
     ]
@@ -1559,7 +1619,11 @@ const schedule = {
   "8-D": {
     "Dushanba": [
       {
-        "subject": "Algebra",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Geometriya",
         "time": "09:20-10:05"
       },
       {
@@ -1567,63 +1631,63 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Jahon tarixi",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Adabiyot",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Jahon tarixi",
+        "subject": "Kimyo",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Rus tili",
+        "subject": "Geografiya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Fizika",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Tarbiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Fizika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "O'zbekiston tarixi",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Biologiya",
+        "subject": "San'at (Art)",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
@@ -1632,6 +1696,36 @@ const schedule = {
       },
       {
         "subject": "Fizika",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Biologiya",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Informatika",
+        "time": "13:55-14:40"
+      }
+    ],
+    "Payshanba": [
+      {
+        "subject": "Fizika",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Geografiya",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Ingliz tili",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Algebra",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Ona tili",
         "time": "12:15-13:00"
       },
       {
@@ -1639,29 +1733,29 @@ const schedule = {
         "time": "13:05-13:50"
       },
       {
-        "subject": "Algebra",
+        "subject": "Ingliz tili",
         "time": "13:55-14:40"
       }
     ],
-    "Payshanba": [
+    "Juma": [
       {
-        "subject": "Adabiyot",
+        "subject": "Algebra",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Adabiyot",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Rus tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Informatika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Biologiya",
         "time": "12:15-13:00"
       },
       {
@@ -1669,37 +1763,7 @@ const schedule = {
         "time": "13:05-13:50"
       },
       {
-        "subject": "Geometriya",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Juma": [
-      {
-        "subject": "Informatika",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Biologiya",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Ingliz tili",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Fizika",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "San'at (Art)",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Ingliz tili",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Algebra",
+        "subject": "Kimyo",
         "time": "13:55-14:40"
       }
     ]
@@ -1707,37 +1771,75 @@ const schedule = {
   "9-A": {
     "Dushanba": [
       {
-        "subject": "Ingliz tili",
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Kimyo",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Informatika",
+        "subject": "Geometriya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Jismoniy tarbiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "San'at (Art)",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Algebra",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Geografiya",
+        "subject": "Adabiyot",
         "time": "08:30-09:15"
       },
       {
+        "subject": "Geografiya",
+        "time": "09:20-10:05"
+      },
+      {
         "subject": "Fizika",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Algebra",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Geometriya",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Ingliz tili",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Kimyo",
+        "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
+      }
+    ],
+    "Chorshanba": [
+      {
+        "subject": "Algebra",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Ona tili",
         "time": "09:20-10:05"
       },
       {
@@ -1745,37 +1847,7 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Jahon tarixi",
-        "time": "11:00-11:45"
-      },
-      {
         "subject": "Ingliz tili",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Ona tili",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Adabiyot",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Chorshanba": [
-      {
-        "subject": "Geometriya",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Algebra",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Kimyo",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "O'zbekiston tarixi",
         "time": "11:00-11:45"
       },
       {
@@ -1783,7 +1855,7 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Rus tili",
+        "subject": "O'zbekiston tarixi",
         "time": "13:05-13:50"
       },
       {
@@ -1793,37 +1865,41 @@ const schedule = {
     ],
     "Payshanba": [
       {
-        "subject": "Geometriya",
+        "subject": "Geografiya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Informatika",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Ingliz tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Fizika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Fizika",
+        "subject": "O'zbekiston tarixi",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Rus tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Geometriya",
         "time": "13:55-14:40"
+      },
+      {
+        "subject": "IELTS",
+        "time": "14:45-15:30"
       }
     ],
     "Juma": [
       {
-        "subject": "Biologiya",
+        "subject": "Ingliz tili",
         "time": "08:30-09:15"
       },
       {
@@ -1831,23 +1907,23 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Algebra",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Biologiya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Algebra",
+        "subject": "Adabiyot",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Rus tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Jahon tarixi",
         "time": "13:55-14:40"
       }
     ]
@@ -1855,127 +1931,131 @@ const schedule = {
   "9-B": {
     "Dushanba": [
       {
-        "subject": "Rus tili",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Geometriya",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Algebra",
-        "time": "11:00-11:45"
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
       },
       {
         "subject": "Informatika",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "San'at (Art)",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Ona tili",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Algebra",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Fizika",
         "time": "13:05-13:50"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Rus tili",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Ingliz tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Jahon tarixi",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Geografiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "O'zbekiston tarixi",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Kimyo",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Geometriya",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ingliz tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Fizika",
+        "subject": "Tarbiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Rus tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Adabiyot",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "O'zbekiston tarixi",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Algebra",
+        "subject": "Fizika",
         "time": "13:55-14:40"
       }
     ],
     "Payshanba": [
       {
-        "subject": "Informatika",
+        "subject": "Ona tili",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Geografiya",
+        "subject": "Fizika",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Fizika",
+        "subject": "Geografiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Algebra",
+        "subject": "Geometriya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Jismoniy tarbiya",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Kimyo",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Jahon tarixi",
+        "subject": "Informatika",
         "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "Algebra",
+        "subject": "Biologiya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Geometriya",
         "time": "09:20-10:05"
       },
       {
@@ -1983,19 +2063,19 @@ const schedule = {
         "time": "10:10-10:55"
       },
       {
-        "subject": "Biologiya",
+        "subject": "Adabiyot",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Kimyo",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "San'at (Art)",
+        "subject": "Algebra",
         "time": "13:55-14:40"
       }
     ]
@@ -2003,105 +2083,109 @@ const schedule = {
   "10-A": {
     "Dushanba": [
       {
-        "subject": "Jismoniy tarbiya",
-        "time": "09:20-10:05"
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
       },
       {
         "subject": "Algebra",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Geometriya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Rus tili",
+        "subject": "O'zbekiston tarixi",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Informatika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "CHQBT",
+        "subject": "IELTS",
         "time": "13:05-13:50"
       },
       {
-        "subject": "IELTS",
+        "subject": "Ingliz tili",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "Algebra",
+        "subject": "Fizika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Adabiyot",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Algebra",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Geometriya",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ona tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Fizika",
+        "subject": "Ingliz tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Jahon tarixi",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Rus tili",
+        "subject": "Fizika",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Jahon tarixi",
+        "subject": "O'zbekiston tarixi",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Geometriya",
+        "subject": "CHQBT",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "IELTS",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Informatika",
+        "subject": "Rus tili",
         "time": "13:55-14:40"
       }
     ],
     "Payshanba": [
       {
-        "subject": "Algebra",
+        "subject": "CHQBT",
         "time": "08:30-09:15"
       },
       {
-        "subject": "IELTS",
+        "subject": "Ingliz tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Tarbiya",
+        "subject": "Fizika",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Fizika",
+        "subject": "Jismoniy tarbiya",
         "time": "11:00-11:45"
       },
       {
@@ -2109,11 +2193,11 @@ const schedule = {
         "time": "12:15-13:00"
       },
       {
-        "subject": "Fizika",
+        "subject": "Tarbiya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "CHQBT",
+        "subject": "IELTS",
         "time": "13:55-14:40"
       }
     ],
@@ -2127,23 +2211,23 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Adabiyot",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Rus tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "IELTS",
+        "subject": "Algebra",
         "time": "12:15-13:00"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Fizika",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Informatika",
         "time": "13:55-14:40"
       }
     ]
@@ -2151,41 +2235,45 @@ const schedule = {
   "10-B": {
     "Dushanba": [
       {
-        "subject": "Algebra",
-        "time": "09:20-10:05"
+        "subject": "Kelajak soati",
+        "time": "08:30-09:15"
       },
       {
         "subject": "Ingliz tili",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Tarbiya",
         "time": "10:10-10:55"
       },
       {
-        "subject": "IELTS",
+        "subject": "Informatika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "CHQBT",
+        "subject": "Algebra",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Rus tili",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Rus tili",
+        "subject": "IELTS",
         "time": "13:55-14:40"
       }
     ],
     "Seshanba": [
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Geometriya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Jahon tarixi",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Adabiyot",
         "time": "10:10-10:55"
       },
       {
@@ -2193,7 +2281,7 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Algebra",
+        "subject": "Ingliz tili",
         "time": "12:15-13:00"
       },
       {
@@ -2201,43 +2289,13 @@ const schedule = {
         "time": "13:05-13:50"
       },
       {
-        "subject": "O'zbekiston tarixi",
+        "subject": "Algebra",
         "time": "13:55-14:40"
       }
     ],
     "Chorshanba": [
       {
-        "subject": "Ingliz tili",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Informatika",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Algebra",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Fizika",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "Jahon tarixi",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Tarbiya",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "CHQBT",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Payshanba": [
-      {
-        "subject": "Fizika",
+        "subject": "O'zbekiston tarixi",
         "time": "08:30-09:15"
       },
       {
@@ -2245,29 +2303,59 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Fizika",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Informatika",
+        "subject": "Ona tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Rus tili",
+        "subject": "CHQBT",
         "time": "13:05-13:50"
       },
       {
+        "subject": "Fizika",
+        "time": "13:55-14:40"
+      }
+    ],
+    "Payshanba": [
+      {
+        "subject": "Adabiyot",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Rus tili",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Geometriya",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Ingliz tili",
+        "time": "11:00-11:45"
+      },
+      {
         "subject": "IELTS",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "CHQBT",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Fizika",
         "time": "13:55-14:40"
       }
     ],
     "Juma": [
       {
-        "subject": "Ona tili",
+        "subject": "Informatika",
         "time": "08:30-09:15"
       },
       {
@@ -2275,23 +2363,23 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Fizika",
+        "subject": "Ona tili",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geometriya",
+        "subject": "O'zbekiston tarixi",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Fizika",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Geometriya",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Algebra",
         "time": "13:55-14:40"
       }
     ]
@@ -2299,63 +2387,7 @@ const schedule = {
   "11-A": {
     "Dushanba": [
       {
-        "subject": "Adabiyot",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "CHQBT",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Ingliz tili",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "Jahon tarixi",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "Algebra",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "IELTS",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Seshanba": [
-      {
-        "subject": "Informatika",
-        "time": "08:30-09:15"
-      },
-      {
-        "subject": "Fizika",
-        "time": "09:20-10:05"
-      },
-      {
-        "subject": "Tarbiya",
-        "time": "10:10-10:55"
-      },
-      {
-        "subject": "Geometriya",
-        "time": "11:00-11:45"
-      },
-      {
-        "subject": "O'zbekiston tarixi",
-        "time": "12:15-13:00"
-      },
-      {
-        "subject": "CHQBT",
-        "time": "13:05-13:50"
-      },
-      {
-        "subject": "Informatika",
-        "time": "13:55-14:40"
-      }
-    ],
-    "Chorshanba": [
-      {
-        "subject": "Fizika",
+        "subject": "Kelajak soati",
         "time": "08:30-09:15"
       },
       {
@@ -2363,37 +2395,97 @@ const schedule = {
         "time": "09:20-10:05"
       },
       {
-        "subject": "Algebra",
+        "subject": "CHQBT",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Ona tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Ingliz tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "O'zbekiston tarixi",
         "time": "13:05-13:50"
       },
       {
+        "subject": "Algebra",
+        "time": "13:55-14:40"
+      }
+    ],
+    "Seshanba": [
+      {
+        "subject": "Geometriya",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "IELTS",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "Fizika",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Tarbiya",
+        "time": "11:00-11:45"
+      },
+      {
+        "subject": "Adabiyot",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Informatika",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Ingliz tili",
+        "time": "13:55-14:40"
+      }
+    ],
+    "Chorshanba": [
+      {
+        "subject": "Geometriya",
+        "time": "08:30-09:15"
+      },
+      {
+        "subject": "Informatika",
+        "time": "09:20-10:05"
+      },
+      {
+        "subject": "CHQBT",
+        "time": "10:10-10:55"
+      },
+      {
+        "subject": "Algebra",
+        "time": "11:00-11:45"
+      },
+      {
         "subject": "O'zbekiston tarixi",
+        "time": "12:15-13:00"
+      },
+      {
+        "subject": "Fizika",
+        "time": "13:05-13:50"
+      },
+      {
+        "subject": "Jahon tarixi",
         "time": "13:55-14:40"
       }
     ],
     "Payshanba": [
       {
-        "subject": "IELTS",
+        "subject": "Geometriya",
         "time": "08:30-09:15"
       },
       {
-        "subject": "Adabiyot",
+        "subject": "Jismoniy tarbiya",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Algebra",
         "time": "10:10-10:55"
       },
       {
@@ -2401,15 +2493,15 @@ const schedule = {
         "time": "11:00-11:45"
       },
       {
-        "subject": "Jismoniy tarbiya",
+        "subject": "Ingliz tili",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Algebra",
+        "subject": "Fizika",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Fizika",
+        "subject": "IELTS",
         "time": "13:55-14:40"
       }
     ],
@@ -2419,27 +2511,27 @@ const schedule = {
         "time": "08:30-09:15"
       },
       {
-        "subject": "Geometriya",
+        "subject": "Rus tili",
         "time": "09:20-10:05"
       },
       {
-        "subject": "Ingliz tili",
+        "subject": "Fizika",
         "time": "10:10-10:55"
       },
       {
-        "subject": "Algebra",
+        "subject": "Ona tili",
         "time": "11:00-11:45"
       },
       {
-        "subject": "Ona tili",
+        "subject": "Adabiyot",
         "time": "12:15-13:00"
       },
       {
-        "subject": "Fizika",
+        "subject": "Algebra",
         "time": "13:05-13:50"
       },
       {
-        "subject": "Rus tili",
+        "subject": "Ingliz tili",
         "time": "13:55-14:40"
       }
     ]
